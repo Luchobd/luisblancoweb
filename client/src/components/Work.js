@@ -14,17 +14,32 @@ const Work = () => {
       <div className="container mx-auto">
         {/* text */}
         <div className="flex justify-between items-center">
-          <h2 className="h2 leading-tight text-accent">
+          <motion.h2
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="h2 leading-tight text-accent"
+          >
             my latest <br /> personal projects.
-          </h2>
+          </motion.h2>
           {/* <p className="max-w-sm mb-[1.5rem]">
               section for my projects and practices. Taking a look at my github and deploying.
               </p> */}
-          <a href="https://github.com/Luchobd" className="btn btn-sm flex items-center">See my github profile</a>
+          <motion.a
+            href="https://github.com/Luchobd"
+            variants={fadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="btn btn-sm flex items-center"
+          >
+            See my github profile
+          </motion.a>
         </div>
         <dir className="flex flex-col lg:flex-row gap-x-10 pl-0">
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -56,10 +71,14 @@ const Work = () => {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">TODO list and login - TypeScript</span>
+                <span className="text-3xl text-white">
+                  TODO list and login - TypeScript
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-7 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">MongoDB - Express - ReactNative</span>
+                <span className="text-2xl text-white">
+                  MongoDB - Express - ReactNative
+                </span>
               </div>
             </div>
             {/* image - 1 */}
@@ -74,14 +93,20 @@ const Work = () => {
               />
               {/* pre-title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">FullStack Developer TS and Dart</span>
+                <span className="text-gradient">
+                  FullStack Developer TS and Dart
+                </span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">TODO list and login - TS and Dart</span>
+                <span className="text-3xl text-white">
+                  TODO list and login - TS and Dart
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-7 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">PostgreSQL - Express - Flutter</span>
+                <span className="text-2xl text-white">
+                  PostgreSQL - Express - Flutter
+                </span>
               </div>
             </div>
           </motion.div>
@@ -108,10 +133,14 @@ const Work = () => {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Ecommerce - TypeScript</span>
+                <span className="text-3xl text-white">
+                  Ecommerce - TypeScript
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-7 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">MongoDB - Express - React - ReactNative</span>
+                <span className="text-2xl text-white">
+                  MongoDB - Express - React - ReactNative
+                </span>
               </div>
             </div>
             {/* image - 3 */}
@@ -130,10 +159,14 @@ const Work = () => {
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">TODO list and login - TypeScript</span>
+                <span className="text-3xl text-white">
+                  TODO list and login - TypeScript
+                </span>
               </div>
               <div className="absolute -bottom-full left-12 group-hover:bottom-7 transition-all duration-700 z-50">
-                <span className="text-2xl text-white">PostgreSQL - Nest - VueTs</span>
+                <span className="text-2xl text-white">
+                  PostgreSQL - Nest - VueTs
+                </span>
               </div>
             </div>
           </motion.div>
